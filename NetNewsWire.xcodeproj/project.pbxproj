@@ -399,7 +399,6 @@
 		51868BF1254386630011A17B /* SidebarDeleteItemsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51868BF0254386630011A17B /* SidebarDeleteItemsAlert.swift */; };
 		51868BF2254386630011A17B /* SidebarDeleteItemsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51868BF0254386630011A17B /* SidebarDeleteItemsAlert.swift */; };
 		5186A635235EF3A800C97195 /* VibrantLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186A634235EF3A800C97195 /* VibrantLabel.swift */; };
-		518B2EE82351B45600400001 /* NetNewsWire_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D61952029031D009BC708 /* NetNewsWire_iOSTests.swift */; };
 		518C3193237B00D9004D740F /* DetailIconSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5141E7552374A2890013FF27 /* DetailIconSchemeHandler.swift */; };
 		518C3194237B00DA004D740F /* DetailIconSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5141E7552374A2890013FF27 /* DetailIconSchemeHandler.swift */; };
 		518ED21D23D0F26000E0A862 /* UIViewController-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518ED21C23D0F26000E0A862 /* UIViewController-Extensions.swift */; };
@@ -1130,6 +1129,9 @@
 		84F9EAF4213660A100CF2DE4 /* testGenericScript.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 84F9EAE1213660A100CF2DE4 /* testGenericScript.applescript */; };
 		84F9EAF5213660A100CF2DE4 /* establishMainWindowStartingState.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 84F9EAE2213660A100CF2DE4 /* establishMainWindowStartingState.applescript */; };
 		84FF69B11FC3793300DC198E /* FaviconURLFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FF69B01FC3793300DC198E /* FaviconURLFinder.swift */; };
+		AE8FCE302626FB17008808D2 /* Articles in Frameworks */ = {isa = PBXBuildFile; productRef = AE8FCE2F2626FB17008808D2 /* Articles */; };
+		AE8FCE322626FB17008808D2 /* Articles in Embed Frameworks */ = {isa = PBXBuildFile; productRef = AE8FCE2F2626FB17008808D2 /* Articles */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AEC52AC52625567900395C47 /* MasterTimelineCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC52AC42625567900395C47 /* MasterTimelineCellTests.swift */; };
 		B24E9ADC245AB88400DA5718 /* NSAttributedString+NetNewsWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E9ABA245AB88300DA5718 /* NSAttributedString+NetNewsWire.swift */; };
 		B24E9ADD245AB88400DA5718 /* NSAttributedString+NetNewsWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E9ABA245AB88300DA5718 /* NSAttributedString+NetNewsWire.swift */; };
 		B24E9ADE245AB88400DA5718 /* NSAttributedString+NetNewsWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E9ABA245AB88300DA5718 /* NSAttributedString+NetNewsWire.swift */; };
@@ -1421,6 +1423,17 @@
 				51A737AF24DB19730015FA66 /* RSCore in Embed Frameworks */,
 				51A737C924DB19CC0015FA66 /* RSParser in Embed Frameworks */,
 				514C16DF24D2EF15009A3AFA /* RSTree in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE8FCE312626FB17008808D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE8FCE322626FB17008808D2 /* Articles in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1863,7 +1876,6 @@
 		840BEE4021D70E64009BBAFA /* CrashReportWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashReportWindowController.swift; sourceTree = "<group>"; };
 		840D617C2029031C009BC708 /* NetNewsWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetNewsWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D617E2029031C009BC708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840D61952029031D009BC708 /* NetNewsWire_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetNewsWire_iOSTests.swift; sourceTree = "<group>"; };
 		840D61972029031D009BC708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84162A142038C12C00035290 /* MarkCommandValidationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkCommandValidationStatus.swift; sourceTree = "<group>"; };
 		841ABA4D20145E7300980E11 /* NothingInspectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NothingInspectorViewController.swift; sourceTree = "<group>"; };
@@ -2012,6 +2024,7 @@
 		84F9EAE2213660A100CF2DE4 /* establishMainWindowStartingState.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = establishMainWindowStartingState.applescript; sourceTree = "<group>"; };
 		84F9EAE4213660A100CF2DE4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FF69B01FC3793300DC198E /* FaviconURLFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaviconURLFinder.swift; sourceTree = "<group>"; };
+		AEC52AC42625567900395C47 /* MasterTimelineCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTimelineCellTests.swift; sourceTree = "<group>"; };
 		B24E9ABA245AB88300DA5718 /* NSAttributedString+NetNewsWire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+NetNewsWire.swift"; sourceTree = "<group>"; };
 		B24EFD482330FF99006C6242 /* NetNewsWire-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NetNewsWire-Bridging-Header.h"; sourceTree = "<group>"; };
 		B24EFD5923310109006C6242 /* WKPreferencesPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKPreferencesPrivate.h; sourceTree = "<group>"; };
@@ -2097,6 +2110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8FCE302626FB17008808D2 /* Articles in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3076,7 +3090,7 @@
 		840D61942029031D009BC708 /* NetNewsWire-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				840D61952029031D009BC708 /* NetNewsWire_iOSTests.swift */,
+				AEC52AC42625567900395C47 /* MasterTimelineCellTests.swift */,
 				840D61972029031D009BC708 /* Info.plist */,
 			);
 			path = "NetNewsWire-iOSTests";
@@ -3812,6 +3826,7 @@
 				518B2ECE2351B3DD00400001 /* Sources */,
 				518B2ECF2351B3DD00400001 /* Frameworks */,
 				518B2ED02351B3DD00400001 /* Resources */,
+				AE8FCE312626FB17008808D2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -3819,6 +3834,9 @@
 				518B2ED82351B3DD00400001 /* PBXTargetDependency */,
 			);
 			name = "NetNewsWire-iOSTests";
+			packageProductDependencies = (
+				AE8FCE2F2626FB17008808D2 /* Articles */,
+			);
 			productName = "NetNewsWire-iOSTests";
 			productReference = 518B2ED22351B3DD00400001 /* NetNewsWire-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -4680,7 +4698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				518B2EE82351B45600400001 /* NetNewsWire_iOSTests.swift in Sources */,
+				AEC52AC52625567900395C47 /* MasterTimelineCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5838,6 +5856,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 518B2EE92351B4C200400001 /* NetNewsWire_iOSTests_target.xcconfig */;
 			buildSettings = {
+				SDKROOT = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetNewsWire.app/NetNewsWire";
 			};
 			name = Debug;
 		};
@@ -5845,6 +5865,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 518B2EE92351B4C200400001 /* NetNewsWire_iOSTests_target.xcconfig */;
 			buildSettings = {
+				SDKROOT = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetNewsWire.app/NetNewsWire";
 			};
 			name = Release;
 		};
@@ -6430,6 +6452,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 519CA8E325841DB700EB079A /* XCRemoteSwiftPackageReference "plcrashreporter" */;
 			productName = CrashReporter;
+		};
+		AE8FCE2F2626FB17008808D2 /* Articles */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Articles;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

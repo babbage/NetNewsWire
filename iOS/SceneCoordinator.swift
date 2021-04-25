@@ -1850,7 +1850,7 @@ private extension SceneCoordinator {
 		replaceArticles(with: Set(articles), animated: true)
 	}
 		
-	func replaceArticles(with unsortedArticles: Set<Article>, animated: Bool) {
+	public func replaceArticles(with unsortedArticles: Set<Article>, animated: Bool) {
 		let sortedArticles = Array(unsortedArticles).sortedByDate(sortDirection, groupByFeed: groupByFeed)
 		replaceArticles(with: sortedArticles, animated: animated)
 	}
