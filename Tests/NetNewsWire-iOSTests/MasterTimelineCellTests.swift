@@ -14,7 +14,7 @@ import Articles
 
 class MasterTimelineCellTests: XCTestCase {
 	var masterTimelineViewController: MasterTimelineViewController?
-	let coordinator = SceneCoordinator()
+	let coordinator = MockSceneCoordinator()
 
     override func setUpWithError() throws {
 		// Required to prompt Coordinator to instantiate its own essential
@@ -33,7 +33,7 @@ class MasterTimelineCellTests: XCTestCase {
 	func testMasterTimelineUnreadCell_hasExpectedAccessibilityActionLabels() throws {
 		// The coordinator must have content set as if it does not, swipeActionsConfigurtions accessed
 		// in the tests will be nil as there will be no cells in the table.
-		coordinator.replaceArticles(with: [testArticle(read: false)], animated: false)
+		coordinator.setTestData(with: [testArticle(read: false)], animated: false)
 		let (leadConfiguration, _) = try configurationActions(for: masterTimelineViewController)
 
 		// Note that when VoiceOver voices 'Read' by itself it rhymes with 'need' not 'head'. Therefore,
@@ -43,20 +43,20 @@ class MasterTimelineCellTests: XCTestCase {
 	}
 	
 	func testMasterTimelineReadCell_hasExpectedAccessibilityActionLabels() throws {
-		coordinator.replaceArticles(with: [testArticle(read: true)], animated: false)
+		coordinator.setTestData(with: [testArticle(read: true)], animated: false)
 		let (leadConfiguration, _) = try configurationActions(for: masterTimelineViewController)
 		XCTAssertEqual(leadConfiguration?.actions[0].title, "Mark as Unread")
 	}
 	
 	func testMasterTimelineUnstarredCell_hasExpectedAccessibilityActionLabels() throws {
-		coordinator.replaceArticles(with: [testArticle(starred: false)], animated: false)
+		coordinator.setTestData(with: [testArticle(starred: false)], animated: false)
 		let (_, trailingConfiguration) = try configurationActions(for: masterTimelineViewController)
 		XCTAssertEqual(trailingConfiguration?.actions[0].title, "Star")
 		XCTAssertEqual(trailingConfiguration?.actions[1].title, "More")
 	}
 	
 	func testMasterTimelineStarredCell_hasExpectedAccessibilityActionLabels() throws {
-		coordinator.replaceArticles(with: [testArticle(starred: true)], animated: false)
+		coordinator.setTestData(with: [testArticle(starred: true)], animated: false)
 		let (_, trailingConfiguration) = try configurationActions(for: masterTimelineViewController)
 		XCTAssertEqual(trailingConfiguration?.actions[0].title, "Unstar")
 		XCTAssertEqual(trailingConfiguration?.actions[1].title, "More")
