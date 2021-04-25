@@ -80,7 +80,6 @@
 		176813F72564BB2C00D98635 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 176813F62564BB2C00D98635 /* SwiftUI.framework */; };
 		176813FC2564BB2D00D98635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176813FB2564BB2D00D98635 /* Assets.xcassets */; };
 		176814002564BB2D00D98635 /* NetNewsWire iOS Widget Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 176813F32564BB2C00D98635 /* NetNewsWire iOS Widget Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1768140B2564BB8300D98635 /* NetNewsWire_iOSwidgetextension_target.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1768140A2564BB8300D98635 /* NetNewsWire_iOSwidgetextension_target.xcconfig */; };
 		176814132564BC8A00D98635 /* WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176814122564BC8A00D98635 /* WidgetBundle.swift */; };
 		1768142D2564BCA800D98635 /* TimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1768142C2564BCA800D98635 /* TimelineProvider.swift */; };
 		176814362564BCC000D98635 /* UnreadWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176814352564BCC000D98635 /* UnreadWidget.swift */; };
@@ -4066,7 +4065,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Ranchero Software";
 				TargetAttributes = {
 					176813F22564BB2C00D98635 = {
@@ -4351,7 +4350,6 @@
 				516A093723609A3600EAE89B /* SettingsComboTableViewCell.xib in Resources */,
 				51F85BF32272531500C787DC /* Dedication.rtf in Resources */,
 				516A09422361248000EAE89B /* Inspector.storyboard in Resources */,
-				1768140B2564BB8300D98635 /* NetNewsWire_iOSwidgetextension_target.xcconfig in Resources */,
 				5103A9B424216A4200410853 /* blank.html in Resources */,
 				84C9FCA42262A1B800D921D6 /* LaunchScreenPhone.storyboard in Resources */,
 				51F85BEB22724CB600C787DC /* About.rtf in Resources */,
@@ -4825,7 +4823,6 @@
 				517B2EBC24B3E62A001AC46C /* WrapperScriptMessageHandler.swift in Sources */,
 				51919FB324AAB97900541E64 /* FeedIconImageLoader.swift in Sources */,
 				5177472024B3882600EB0F74 /* ImageViewController.swift in Sources */,
-				51919FB324AAB97900541E64 /* FeedIconImageLoader.swift in Sources */,
 				51E4991324A808FB00B667CB /* AddWebFeedDefaultContainer.swift in Sources */,
 				51E4993C24A8709900B667CB /* AppDelegate.swift in Sources */,
 				6591727F24B5D19500B638E8 /* SettingsDetailAccountView.swift in Sources */,
